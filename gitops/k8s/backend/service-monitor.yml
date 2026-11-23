@@ -11,7 +11,7 @@ spec:
       - boutique
   selector:
     matchLabels:
-      app: gateway   
+      app.kubernetes.io/component: backend   
   endpoints:
     - port: http
       path: /metrics
