@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
         - name: orders
-          image: ghcr.io/abhishek1994-ops/orders:1ebec3729cd10fe1eeac6f0858fba58e2da07956
+          image: ghcr.io/abhishek1994-ops/orders:987c55bfaf798ce3c4bdf206b11a79f87c19e3d3
           ports:
             - containerPort: 3005
           env:
