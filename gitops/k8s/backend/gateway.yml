@@ -41,13 +41,14 @@ metadata:
   namespace: boutique
   labels:
     app: gateway
+    app.kubernetes.io/part-of: boutique
+    app.kubernetes.io/component: backend
 spec:
   selector:
     app: gateway
   ports:
-    - name: http   
+    - name: http
       protocol: TCP
       port: 3001
       targetPort: 3001
   type: ClusterIP
-
